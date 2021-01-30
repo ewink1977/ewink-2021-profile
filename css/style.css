@@ -1,0 +1,31 @@
+/* body {
+    background-image: url("../img/ewbackground_new.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-sizing: border-box;
+} */
+
+h1.hero {
+    font-size: 5.0em;
+    font-family: 'Special Elite', cursive; /* Like this one! */
+    color: white;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+h2.hero {
+    margin-top: -30px;
+    font-size: 2.2em;
+    font-family: 'Special Elite', cursive;
+    color: white;
+    text-align: center;
+}
+
+img.profile {
+    width: 400px;
+}
+
+img.icon {
+    width: 20px;
+}
