@@ -1,3 +1,11 @@
+.code-bg {
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
 h1.hero {
     font-size: 5.0em;
     font-family: 'Special Elite', cursive; /* Like this one! */
@@ -20,4 +28,35 @@ img.profile {
 
 img.icon {
     width: 20px;
+}
+
+/* Resume Styling */
+
+ul.disc {
+    list-style: disc;
+}
+
+.job {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.q13 {
+    background-image: url(../img/q13logo.png);
+}
+
+.kjrh {
+    background-image: url(../img/kjrhlogo.png);
+}
+
+.ktul {
+    background-image: url(../img/ktullogo.png);
+}
+
+.fox23 {
+    background-image: url(../img/fox23logo.png);
 }
