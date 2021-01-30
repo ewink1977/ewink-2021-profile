@@ -60,3 +60,8 @@ ul.disc {
 .fox23 {
     background-image: url(../img/fox23logo.png);
 }
+
+/* An empty div for spacing, right now. */
+.empty {
+    min-height: 300px;
+}
