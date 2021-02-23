@@ -22,8 +22,10 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/slate/_variables.scss">
     <link rel="stylesheet" href="https://bootswatch.com/4/slate/_bootswatch.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/376d4d65df.js" crossorigin="anonymous"></script>
     <!-- Local Override CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Bowlby+One|PT+Sans+Narrow|Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|PT+Sans+Narrow|Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -83,14 +85,13 @@
                 <p>
                     I will soon (early March 2021) graduate from Coding Dojo where I will finish the bootcamp with a yellow belt in Web 
                     Fundamentals, which includes HTML5, CSS3, and JavaScript, and a black belt in Python. Please, have a
-                    look at my <a href="resume.html">resume</a> and feel free to contact me at <a href="mailto:erin@douglasavenue.com">erin@douglasavenue.com</a>! Thanks 
-                    for stopping by!
+                    look at my <a href="resume.html">resume</a>, check out my projects below, and feel free to contact me at 
+                    <a href="mailto:erin@douglasavenue.com">erin@douglasavenue.com</a>! Thanks for stopping by!
                 </p>
             </div>
         </div>
         <div class="row my-1 px-3 justify-content-around">
             <div class="card text-white bg-secondary" style="max-width: 33rem;">
-                <!-- <div class="card-header">Web Skills:</div> -->
                 <div class="card-body">
                     <h4 class="card-title">Full-Stack Web Developer</h4>
                     <span class="badge badge-success">Front-End Development</span>
@@ -120,7 +121,6 @@
                 </div>
             </div>
             <div class="card text-white bg-secondary" style="max-width: 33rem;">
-                <!-- <div class="card-header">Video Production Skills:</div> -->
                 <div class="card-body">
                     <h4 class="card-title">Video Storyteller & Journalist</h4>
                     <span class="badge badge-success">Video Photojournalism</span>
@@ -145,8 +145,80 @@
                 </div>
             </div>
         </div>
-        <div class="row empty">
-
+        <div class="row my-3 mx-2">
+            <div class="col employeeBBS rounded shadow w-100">
+                <div class="col p-4">
+                    <h2 class="project">Employee BBS & Time Management System</h2>
+                    <div class="row justify-content-around">
+                        <div class="col rounded shadow border border-light p-3 m-1">
+                            <h4 class="subtitle text-center text-light shadow-lg">A proof-of-performance project!</h3>
+                            <p class="text-justify">
+                                My employee BBS system was created to allow employees of a single or multi-location business to 
+                                communicate with each other, pass along important information, and keep track of employee 
+                                clock ins and outs. 
+                            </p>
+                            <p class="text-justify">
+                                This is done via the three main functions of the system - 
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="ml-5">Dynamic Posting</li>
+                                <li class="ml-5">Event Promotion</li>
+                                <li class="ml-5">Time Management System</li>
+                            </ul>
+                            <p class="text-justify">
+                                The Dynamic Posting system runs as a small, localized 'Twitter'-style time line system. Important 
+                                messages can be stickied, messages can be liked or replied too, and all the posts a user posts 
+                                can be viewed on the user profile.
+                            </p>
+                            <p class="text-justify">
+                                The Event Promotion system can be used to make employees aware of events that affect them. Admins 
+                                can update, delete, and create events. 
+                            </p>
+                            <p class="text-justify">
+                                The Time Management System is a simple system to allow users to clock in with a single click, or 
+                                by inputing time directly. The system as it is now will then allow you to see the number of hours 
+                                worked in a single day. 
+                            </p>
+                            <p class="text-justify">
+                                The platform is expandable, and I am still looking to add more features to it to make it more useful 
+                                as a corporate intranet system. There is a link to the basic documentation in the next column as 
+                                well as a link to the project where you can create an account or use the test account to explore! 
+                            </p>
+                        </div>
+                        <div class="col border border-light rounded shadow p-3 m-1 text-center">
+                            <h4 class="subtitle"><a href="http://18.237.101.228/" target="_blank">Project Demo</a> | 
+                                <a href="https://douglasavenue.com/ebbsdoc/documentation.html" target="_blank">Documentation</a></h4>
+                            <div class="col text-center align-self-middle">
+                                <strong><u><p>Technologies Used</p></u></strong>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="img/icons/python.png" alt="Python" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/django.png" alt="Django" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/JavaScript.png" alt="JavaScript" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/HTML.png" alt="HTML" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/CSS.png" alt="CSS" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/ajax.png" alt="AJAX" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/jQuery.png" alt="jQuery" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/sqlite.png" alt="SQLite" class="techlist m-2"></li>
+                                    <!-- <span class="text-light m-2 techlistfa"><li class="list-inline-item"><i class="fab fa-aws"></i></li></span> -->
+                                    
+                                </ul>
+                                <strong><u><p>Libraries Used</p></u></strong>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">Bootstrap</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">Font Awesome</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">Pillow</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">Imagekit</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">DotEnv</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">Crispy Forms</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">BOTO3 / Django-Storages</span></li>
+                                </ul>
+                            </div>
+                            <hr class="mx-5 border border-secondary rounded">
+                            <img src="img/ebbs_screenshot.jpg" alt="Screenshot of the project" class="img-fluid rounded shadow mt-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- <div class="row px-3 justify-content-between">
             <div class="card border-secondary mt-1 mb-3" style="max-width: 23rem;">

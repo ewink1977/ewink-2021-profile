@@ -22,12 +22,35 @@ h2.hero {
     text-align: center;
 }
 
+h2.project {
+    font-size: 2.2em;
+    font-family: 'Special Elite', cursive;
+    color: white;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: 'Bowlby One SC', cursive;
+}
+
 img.profile {
     width: 400px;
 }
 
 img.icon {
     width: 20px;
+}
+
+img.techlist {
+    width: 50px;
+}
+
+.techlistfa {
+    font-size: 2.3rem;
+}
+
+img.projimg {
+    width: 400px;
 }
 
 /* Resume Styling */
@@ -43,6 +66,10 @@ ul.disc {
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
+}
+
+.employeeBBS {
+    background-image: url(../img/employebbs.png);
 }
 
 .q13 {
