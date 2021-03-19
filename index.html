@@ -83,7 +83,7 @@
                     myself ready to turn my hobby into a career.
                 </p>
                 <p>
-                    I will soon (early March 2021) graduate from Coding Dojo where I will finish the bootcamp with a yellow belt in Web 
+                    I <a href="https://www.linkedin.com/feed/update/urn:li:activity:6777715503881433088/" target="_blank">recently graduated</a> from Coding Dojo where I finished the bootcamp with a yellow belt in Web 
                     Fundamentals, which includes HTML5, CSS3, and JavaScript, and a black belt in Python. Please, have a
                     look at my <a href="resume.html">resume</a>, check out my projects below, and feel free to contact me at 
                     <a href="mailto:erin@douglasavenue.com">erin@douglasavenue.com</a>! Thanks for stopping by!
@@ -220,30 +220,81 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="row px-3 justify-content-between">
-            <div class="card border-secondary mt-1 mb-3" style="max-width: 23rem;">
-                <div class="card-header"><h1>Project One</h1></div>
-                <div class="card-body">
-                    <h4 class="card-title">Project One Subhead!</h4>
-                    <img src="img/project.png" alt="Picture!" style="width:100%;">
-                    <p class="card-text">Would you like to know about project one?</p>
+        <div class="row my-3 mx-2">
+            <div class="col myWeek rounded shadow w-100">
+                <div class="col p-4">
+                    <h2 class="project">MyWeek Scheduling System</h2>
+                    <div class="row justify-content-around">
+                        <div class="col rounded shadow border border-light p-3 m-1">
+                            <h4 class="subtitle text-center text-light shadow-lg">A Scheduling Application for You & Your Friends!</h3>
+                            <p class="text-justify">
+                                MyWeek is a scheduling application developed as a group graduation project for Coding Dojo. Myself as well as 
+                                my cohort Nick Heyland (Project Leader), Jacqui McGowan, and John Oldaker developed the system from scratch,
+                                operating on a Django back end and JavaScript heavy front end. 
+                            </p>
+                            <p class="text-justify">
+                                The main purpose of the system is to allow users to -
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="ml-5">Create and Edit Events</li>
+                                <li class="ml-5">Invite On and Off-site Fiends</li>
+                                <li class="ml-5">Prep For Events</li>
+                            </ul>
+                            <p class="text-justify">
+                                After registering for an account, the user is able to create an event. This event will be added to the user's schedule and 
+                                will show up on their calendar. The user can add an address to the event which will show a map of where the event is, thanks to 
+                                the Mapbox API. 
+                            </p>
+                            <p class="text-justify">
+                                If you have friends using the service you can add them to your friends list making it easy to invite them to your events. If they're 
+                                not on the service, no problem, you can send them an invitation via email which will invite them to sign up and direct them to the 
+                                event. The current version of the application does not the ability to add yourself to other people's events, but that will be 
+                                addressed in a future update.
+                            </p>
+                            <p class="text-justify">
+                                User's are able to add in a mobile phone number allowing them to get updates and invites to events via SMS. The updates and invites are 
+                                sent out using the Twillio API, with back end usage of the <em>phonenumbers</em> Python library to maintain E.164 formatting compliance.
+                            </p>
+                            <p class="text-justify">
+                                The creator of an event can also properly prep for the event as the forecast weather for the event is added to the event page thanks 
+                                to the Open Weather API. This function is only available if an address is entered. It's visible to all participants. There's also an 
+                                explore option which allows people to browse all public events. The application is expandable to add more options and features!
+                            </p>
+                        </div>
+                        <div class="col border border-light rounded shadow p-3 m-1 text-center">
+                            <h4 class="subtitle"><a href="http://54.187.3.190/" target="_blank">Project Demo</a> | 
+                                <a href="https://github.com/nheyland/MyWeek" target="_blank">GitHub Repo</a></h4>
+                            <div class="col text-center align-self-middle">
+                                <strong><u><p>Technologies Used</p></u></strong>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img src="img/icons/python.png" alt="Python" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/django.png" alt="Django" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/JavaScript.png" alt="JavaScript" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/HTML.png" alt="HTML" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/CSS.png" alt="CSS" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/ajax.png" alt="AJAX" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/jQuery.png" alt="jQuery" class="techlist m-2"></li>
+                                    <li class="list-inline-item"><img src="img/icons/sqlite.png" alt="SQLite" class="techlist m-2"></li>
+                                    
+                                </ul>
+                                <strong><u><p>Libraries Used</p></u></strong>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">Font Awesome</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">DotEnv</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">Twillio</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">bcrypt</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">Mapbox</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-pill badge-info">Open Weather Map</span></li>
+                                </ul>
+                            </div>
+                            <hr class="mx-5 border border-secondary rounded">
+                            <img src="img/my-week-screenshot.jpg" alt="Screenshot of the project" class="img-fluid rounded shadow mt-1">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card border-secondary mt-1 mb-3" style="max-width: 23rem;">
-                <div class="card-header"><h1>Project Two</h1></div>
-                <div class="card-body">
-                    <h4 class="card-title">Secondary card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            <div class="card border-secondary mt-1 mb-3" style="max-width: 23rem;">
-                <div class="card-header"><h1>Project Three</h1></div>
-                <div class="card-body">
-                    <h4 class="card-title">Secondary card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </div> -->
+        </div>
+
         <footer class="text-white border border-light rounded-lg">
             <div class="col text-center">
                 <small class="text-muted">My 'Unprofessional' Sites</small><br />
