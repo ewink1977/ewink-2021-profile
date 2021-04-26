@@ -76,6 +76,10 @@ ul.disc {
     background-image: url(../img/myweek.png);
 }
 
+.moonTrek {
+    background-image: url(../img/moontrek-bg.png);
+}
+
 .q13 {
     background-image: url(../img/q13logo.png);
 }
@@ -90,6 +94,14 @@ ul.disc {
 
 .fox23 {
     background-image: url(../img/fox23logo.png);
+}
+
+.fourohfour {
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.newicon {
+    width: 100px;
 }
 
 /* An empty div for spacing, right now. */

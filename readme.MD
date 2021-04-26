@@ -1,5 +1,5 @@
 <h1>ewink's NEW profile!</h1>
-<img src="https://douglasavenue.com/img/yuu.png" alt="Yuu!">
+<img src="https://douglasave-static.sfo3.digitaloceanspaces.com/da-all/yuu.png" alt="Yuu!">
 <h2>a NEW profile for a NEW ewink!</h2>
 <p>My current profile is designed to get me a job in video or in journalism. Now, I am a web developer,
 and as such, I need a profile that reflects that!</p>
