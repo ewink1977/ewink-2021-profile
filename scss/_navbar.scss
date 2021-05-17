@@ -1,0 +1,16 @@
+nav {
+	color: $fontColor;
+	box-shadow: 0.5px 0.5px 15px #1b1717;
+	background-color: whitesmoke;
+
+	a {
+		color: $linkColor !important;
+		&:hover {
+			color: $linkHover !important;
+		}
+	}
+
+	img.icon {
+		width: 3vh;
+	}
+}
