@@ -28,6 +28,14 @@ section {
 			text-decoration: none;
 		}
 	}
+
+	.underline {
+		text-decoration: underline;
+	}
+
+	h5 {
+		font-family: map-get($fonts, SpecialElite);
+	}
 }
 
 .profpic {
