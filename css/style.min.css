@@ -1,0 +1,80 @@
+header { background-image: url("../img/background.jpg"); background-position: center; background-repeat: no-repeat; background-attachment: fixed; box-shadow: 0.5px 0.5px 15px #1b1717; overflow: hidden; }
+
+header h1 { text-align: center; color: #eeebdd; font-family: Special Elite, cursive; font-size: 6em; padding-top: 4rem; }
+
+header h2 { text-align: center; color: #eeebdd; font-family: Special Elite, cursive; font-size: 3em; padding-bottom: 1.5em; margin: -25px auto 0px auto; }
+
+footer { background-image: url("../img/background.jpg"); background-position: center; background-repeat: no-repeat; background-attachment: fixed; overflow: hidden; margin: 0; text-transform: uppercase; box-shadow: 0.5px 0.5px 15px #1b1717; }
+
+footer a { color: #810000; text-decoration: none; }
+
+footer a:hover { color: #630000; text-decoration: dotted; }
+
+#ebbs { background-image: url(../img/employebbs.png); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; }
+
+#myweek { background-image: url(../img/myweek.png); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; }
+
+#moonTrek { background-image: url(../img/moontrek-bg.png); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; }
+
+#funkdafied { background-image: url(../img/funkdafied-bg.png); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; }
+
+nav { color: #1b1717; box-shadow: 0.5px 0.5px 15px #1b1717; background-color: whitesmoke; }
+
+nav a { color: #810000 !important; }
+
+nav a:hover { color: #630000 !important; }
+
+nav img.icon { width: 3vh; }
+
+header { margin-left: -15px; margin-right: -15px; }
+
+.resume-section-head { padding: 0.6em; border-radius: 15px; background-image: linear-gradient(to right, #630000, whitesmoke); font-family: Bowlby One SC, cursive; color: aliceblue; text-shadow: 1px 1px 1px lightslategray; box-shadow: 0.5px 0.5px 15px #1b1717; }
+
+.resume-icons { color: #810000; }
+
+#summary, #skills, #exp, #contact { margin-bottom: 0.5em; }
+
+.job { background-size: contain; background-repeat: no-repeat; background-position: right; border-radius: 20px; margin-left: auto; margin-right: auto; padding: 15px; }
+
+.q13 { background-image: url(../img/q13logo.png); }
+
+.kjrh { background-image: url(../img/kjrhlogo.png); }
+
+.ktul { background-image: url(../img/ktullogo.png); }
+
+.fox23 { background-image: url(../img/fox23logo.png); }
+
+html, body { margin: 0px; padding: 0px; box-sizing: border-box; color: #1b1717; background-color: whitesmoke; }
+
+section { background-color: whitesmoke; margin-bottom: 3rem; }
+
+section a { color: #810000 !important; font-weight: bold; text-decoration: none; }
+
+section a:hover { color: #630000 !important; font-weight: bold; text-decoration: underline; }
+
+section a:visited { color: #810000 !important; font-weight: bold; text-decoration: none; }
+
+section .underline { text-decoration: underline; }
+
+section h5 { font-family: Special Elite, cursive; }
+
+.profpic { max-width: 500px; }
+
+#cards { background-image: url("../img/background.jpg"); background-position: center; background-repeat: no-repeat; background-attachment: fixed; padding: 3em; box-shadow: 0.5px 0.5px 15px #1b1717; overflow: hidden; }
+
+#cards .card { max-width: 33rem; }
+
+h2.project { font-family: Special Elite, cursive; color: #1b1717; font-weight: bold; text-shadow: 1px 1px 1px lightslategray; margin-left: 1rem; }
+
+h4.project-subtitle { font-family: Bowlby One SC, cursive; color: #1b1717; text-transform: uppercase; text-shadow: 1px 1px 1px lightslategray; }
+
+img.newicon { max-width: 150px; }
+
+.code-bg { background-image: url("../img/background.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-size: cover; margin: 0; color: whitesmoke; }
+
+h1.hero { font-size: 5em; font-family: 'Special Elite', cursive; /* Like this one! */ color: white; text-align: center; margin-top: 0.5em; }
+
+h2.hero { margin-top: -26px; font-size: 2.2em; font-family: 'Special Elite', cursive; color: white; text-align: center; }
+
+.fourohfour { font-family: 'Bowlby One SC', cursive; }
+/*# sourceMappingURL=style.min.css.map */

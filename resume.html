@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18752739-1"></script>
@@ -11,154 +12,197 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erin Winking | Full Stack Web Developer</title>
+    <title>Erin Winking | Resume | Full Stack Web Developer</title>
+    <meta name="description"
+        content="Profile page for Full Stack Web Developer, Erin Michael Winking! Erin is a Full Stack Web Developer who is currently open to work. He has skills in HTML, CSS, JavaScript, Python, Django, and React to just name a few! Check out his profile for more information!">
     <!-- Bootstrap & Theme CSS -->
-    <link rel="stylesheet" 
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
-    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.css">
-    <link rel="stylesheet" href="https://bootswatch.com/4/slate/_variables.scss">
-    <link rel="stylesheet" href="https://bootswatch.com/4/slate/_bootswatch.scss">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/376d4d65df.js" crossorigin="anonymous"></script>
     <!-- Local Override CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Bowlby+One|PT+Sans+Narrow|Special+Elite&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|PT+Sans+Narrow|Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    <div class="code-bg">
-        <div class="container">
-            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
-                <h2><a href="index.html"><i class="pr-3 bi bi-house-door-fill"></i></a></h2>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarColor01">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="resume.html">Resume
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/in/erinwinking/" target="_blank"><img src="img/linkedin.png" alt="LinkedIN" class="icon"> LinkedIN</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/ewink1977" target="_blank"><img src="img/github.png" alt="Github" class="icon"> Github</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://twitter.com/erinwinking" target="_blank"><img src="img/twitter.png" alt="Twitter" class="icon"> Twitter</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/c/ErinMichaelWinking" target="_blank"><img src="img/youtube.png" alt="YouTube" class="icon"> YouTube</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <header>
-                <h1 class="hero">Erin M. Winking</h1>
-                <h2 class="hero">Tacoma, Washington // erin@douglasavenue.com</h2>
-            </header>
-            <div class="row">
-                <div class="col p-2">
-                    <div class="alert alert-secondary">
-                        <h2>Summary</h2>
-                    </div>
-                    <p class="mx-4">
-                        Creative and driven visual storyteller and video photojournalist turned web application developer ready to take on a new career as a full-stack developer. Looking forward to use 
-                        my diverse life-skill set and technical skills to develop and design web applications that make a positive impact for the public, the company, and myself. Willing to
-                        relocate!
-                    </p>
-                </div>
+    <nav class="navbar navbar-expand-md sticky-top navbar-light">
+        <h2><a href="index.html"><i class="pr-3 bi bi-house-door-fill"></i></a></h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">Resume <span class="sr-only">(current)</span></a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#summary">Summary</a></li>
+                            <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                            <li><a class="dropdown-item" href="#exp">Experience</a></li>
+                            <li><a class="dropdown-item" href="#funkdafied">ewink's FUNKDAFIED Ranma &#189; Site</a></li>
+                        </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/erinwinking/" target="_blank"><img
+                            src="img/linkedin.png" alt="LinkedIN" class="icon"> LinkedIN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/ewink1977" target="_blank"><img
+                            src="img/githubdark.png" alt="Github" class="icon"> Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/erinwinking" target="_blank"><img
+                            src="img/twitter.png" alt="Twitter" class="icon"> Twitter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/c/ErinMichaelWinking" target="_blank"><img
+                            src="img/youtube.png" alt="YouTube" class="icon"> YouTube</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <header class="mb-3">
+            <h1>Erin M. Winking</h1>
+            <h2>Tacoma, WA // erin@douglasavenue.com</h2>
+        </header>
+        <section id="summary" class="row justify-content-center p-3">
+            <h2 class="col-12 resume-section-head">Summary</h2>
+            <div class="col-8 p-2">
+                <p>Creative and driven visual storyteller and video photojournalist turned web application
+                    developer ready to take on a new career as a full-stack developer. Looking forward to use
+                    my diverse life-skill set and technical skills to develop and design web applications that make
+                    a positive impact for the public, the company, and myself. Willing to
+                    relocate!</p>
             </div>
-            <div class="row">
-                <div class="col p-2">
-                    <div class="alert alert-secondary">
-                        <h2>Skills</h2>
-                    </div>
-                    <ul class="disc">
-                        <li>Front-End: HTML5, CSS3, Git, jQuery, jQueryUI, Responsive Web Design, Bootstrap</li>
-                        <li>Back-End: Python3, Django, MySQL, SQLlite, Bcrypt, Ajax and APIs, Amazon EC2, Gunicorn, WSGI</li>
-                        <li>Video Production: JVC/Sony Professional ENG Camera Operation, ENG Field Production, Field Lighting, Framing/Composition, Color</li>
-                        <li>Video Editing: Final Cut X, Adobe Premier, Edius, Audio Editing, Color Correction, Multi-Track Editing, Sound</li>
-                        <li>Storytelling • Interviewing, Information Gathering, Writing, Public Relations</li>
-                        <li>Social Media • Twitter, Facebook, Instagram, Reddit</li>
-                    </ul>
-                </div>
+        </section>
+        <section id="skills" class="row justify-content-center p-3">
+            <h2 class="col-12 resume-section-head">Skills</h2>
+            <div class="col-8 p-1 ml-2">
+                <ul class="list-unstyled">
+                    <li class="p-2"><i class="fas fa-angle-double-right mr-2 resume-icons"></i>Front-End<i
+                            class="fas fa-play mx-2 resume-icons"></i>HTML5,
+                        CSS3, JavaScript, jQuery, jQueryUI, React, Responsive Web Design, Bootstrap</li>
+                    <li class="p-2"><i class="fas fa-angle-double-right mr-2 resume-icons"></i>Back-End<i
+                            class="fas fa-play mx-2 resume-icons"></i>Python3,
+                        Django, MySQL, SQLlite, Bcrypt,
+                        Ajax and APIs, Amazon EC2, Gunicorn, WSGI, NGINX, Git
+                    </li>
+                    <li class="p-2"><i class="fas fa-angle-double-right mr-2 resume-icons"></i>Video Production<i
+                            class="fas fa-play mx-2 resume-icons"></i>JVC/Sony Professional ENG Camera
+                        Operation, ENG Field Production, Field
+                        Lighting, Framing/Composition, Color</li>
+                    <li class="p-2"><i class="fas fa-angle-double-right mr-2 resume-icons"></i>Video Editing<i
+                            class="fas fa-play mx-2 resume-icons"></i>Final
+                        Cut X, Adobe Premier, Edius,
+                        Audio Editing, Color Correction,
+                        Multi-Track Editing, Sound</li>
+                    <li class="p-2"><i class="fas fa-angle-double-right mr-2 resume-icons"></i>Storytelling <i
+                            class="fas fa-play mx-2 resume-icons"></i>Interviewing, Information
+                        Gathering, Writing, Public Relations</li>
+                    <li class="p-2"><i class="fas fa-angle-double-right mr-2 resume-icons"></i>Social Media <i
+                            class="fas fa-play mx-2 resume-icons"></i>Twitter, Facebook, Instagram,
+                        Reddit</li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col p-2">
-                    <div class="alert alert-secondary">
-                        <h2>Experience</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col q13 job">
+        </section>
+        <section id="exp" class="row justify-content-center p-3">
+            <h2 class="col-12 resume-section-head">Experience</h2>
+            <div class="col-8 q13 job">
                 <h2>Q13 FOX (KCPQ-TV) – Seattle, WA</h2>
                 <p class="lead"><strong>Photojournalist</strong> • April 2017 - Present</p>
                 <div class="col-9">
                     <ul class="disc">
-                        <li>Contributed to evening newscasts by gathering video, interviews, and information from general and breaking news scenes and often assembled this video into stories that aired</li>
+                        <li>Contributed to evening newscasts by gathering video, interviews, and information from
+                            general and breaking news scenes and often assembled this video into stories that aired</li>
                         <li>Brought viewers live video from breaking news</li>
-                        <li>Enhanced station’s social media presence by tweeting with #Q13FOX hashtag from general assignment stories and breaking news events</li>
+                        <li>Enhanced station’s social media presence by tweeting with #Q13FOX hashtag from general
+                            assignment stories and breaking news events</li>
                         <li>Participated in morning newscasts by shooting overnight news</li>
                     </ul>
                 </div>
             </div>
-            <div class="col kjrh job">
+            <div class="col-8 kjrh job">
                 <h2>KJRH Television - Tulsa, OK</h2>
                 <p class="lead"><strong>Photojournalist</strong> • March 2015 - April 2017</p>
                 <div class="col-9">
                     <ul class="disc">
-                        <li>Was an integral part of both morning and night newscasts by setting up and running remote live shots with reporters</li>
-                        <li>Worked with reporters to gather, shoot, write, and edit news stories for prime-time newscast</li>
-                        <li>Brought Tulsans breaking news via social media both with my own account (<a href="https://twitter.com/edubyaphotog" target="_blank" rel="noopener noreferrer">@edubyphotog</a>) and the station’s account</li>
-                        <li>Gathered information from police dispatch, police officers, and bystanders to deliver accurate news from overnight scenes</li>
+                        <li>Was an integral part of both morning and night newscasts by setting up and running remote
+                            live shots with reporters</li>
+                        <li>Worked with reporters to gather, shoot, write, and edit news stories for prime-time newscast
+                        </li>
+                        <li>Brought Tulsans breaking news via social media both with my own account (<a
+                                href="https://twitter.com/edubyaphotog" target="_blank"
+                                rel="noopener noreferrer">@edubyphotog</a>) and the station’s account</li>
+                        <li>Gathered information from police dispatch, police officers, and bystanders to deliver
+                            accurate news from overnight scenes</li>
                     </ul>
                 </div>
             </div>
-            <div class="col ktul job">
+            <div class="col-8 ktul job">
                 <h2>KTUL Television - Tulsa, OK</h2>
                 <p class="lead"><strong>Overnight Photojournalist</strong> • August 2013 – March 2015</p>
                 <div class="col-9">
                     <ul class="disc">
-                        <li>Contributed to the morning newscasts by - without direction or supervision - gathering breaking news video, interviews, and information.</li>
-                        <li>Further assisted the morning news team by running microwave live shots and live shots using bonded cellular technology.</li>
+                        <li>Contributed to the morning newscasts by - without direction or supervision - gathering
+                            breaking news video, interviews, and information.</li>
+                        <li>Further assisted the morning news team by running microwave live shots and live shots using
+                            bonded cellular technology.</li>
                         <li>Furthered the stations social media goals by tweeting information about news scenes.</li>
-                        <li>Helped sales and creative services by occasionally running camera and audio for sponsored remotes.</li>
+                        <li>Helped sales and creative services by occasionally running camera and audio for sponsored
+                            remotes.</li>
                     </ul>
                 </div>
             </div>
-            <div class="col fox23 job">
+            <div class="col-8 fox23 job">
                 <h2>FOX23 Television (KOKI-TV) - Tulsa, OK</h2>
                 <p class="lead"><strong>Photojournalist, Senior Video Editor</strong> • April 2007 – August 2013</p>
                 <div class="col-9">
                     <ul class="disc">
-                        <li>Used my skills to shoot and edit stories on my own and with reporters that aired in newscasts during all dayparts.</li>
-                        <li>Impacted those newscasts further by setting up and shooting remote live shots from all manner of locations.</li>
-                        <li>Was twice awarded ‘Star Performer’ awards and once ‘Employee of the Month’ for my dedication to my work.</li>
-                        <li>As a video editor I worked to mentor and train other video editors and photojournalists; created a handbook to educate as well as entertain regarding editing SOP.</li>
+                        <li>Used my skills to shoot and edit stories on my own and with reporters that aired in
+                            newscasts during all dayparts.</li>
+                        <li>Impacted those newscasts further by setting up and shooting remote live shots from all
+                            manner of locations.</li>
+                        <li>Was twice awarded ‘Star Performer’ awards and once ‘Employee of the Month’ for my dedication
+                            to my work.</li>
+                        <li>As a video editor I worked to mentor and train other video editors and photojournalists;
+                            created a handbook to educate as well as entertain regarding editing SOP.</li>
                     </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col p-2">
-                    <div class="alert alert-secondary">
-                        <h2>Contact</h2>
-                    </div>
-                    <p class="mx-4 mb-5">If you'd like more information, want to hire me for my mad skills, or are just seeking someone to talk about the weather with, please do not hesitate to email 
-                        me at <a href="mailto:erin@douglasavenue.com">erin@douglasavenue.com!</a> Thanks!</p>
-                </div>
+        </section>
+        <section id="contact" class="row justify-content-center p-3">
+            <h2 class="col-12 resume-section-head">Contact</h2>
+            <div class="col-8 p-2">
+                <p>If you'd like more information, want to hire me for my mad skills, or are just
+                    seeking someone to talk about the weather with, please do not hesitate to email
+                    me at <a href="mailto:erin@douglasavenue.com">erin@douglasavenue.com!</a> Thanks!</p>
             </div>
-        </div>
+        </section>
     </div>
+    <footer class="row border border-dark">
+        <div class="col text-center">
+            <small class="text-muted">My 'Unprofessional' Sites</small><br />
+            <a href="https://421a.moe">421.moe BLOG</a> | <a href="https://moontrek.douglasavenue.com">MOONTREK Fan
+                Fiction</a> | <a href="https://funkdafied.douglasavenue.com">Ranma ½ Site</a>
+            </p>
+        </div>
+    </footer>
     <!-- jQuery & Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </body>
-</html>

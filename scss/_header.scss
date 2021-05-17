@@ -1,0 +1,25 @@
+header {
+	background-image: url('../img/background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	box-shadow: 0.5px 0.5px 15px #1b1717;
+	overflow: hidden;
+
+	h1 {
+		text-align: center;
+		color: #eeebdd;
+		font-family: map-get($fonts, SpecialElite);
+		font-size: 6em;
+		padding-top: 4rem;
+	}
+
+	h2 {
+		text-align: center;
+		color: #eeebdd;
+		font-family: map-get($fonts, SpecialElite);
+		font-size: 3em;
+		padding-bottom: 1.5em;
+		margin: -25px auto 0px auto;
+	}
+}
