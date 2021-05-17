@@ -14,8 +14,16 @@
 	overflow: hidden;
 }
 
-.moonTrek {
+#moonTrek {
 	background-image: url(../img/moontrek-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+#funkdafied {
+	background-image: url(../img/funkdafied-bg.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

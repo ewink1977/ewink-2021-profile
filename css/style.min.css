@@ -14,7 +14,9 @@ footer a:hover { color: #630000; text-decoration: dotted; }
 
 #myweek { background-image: url(../img/myweek.png); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; }
 
-.moonTrek { background-image: url(../img/moontrek-bg.png); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; }
+#moonTrek { background-image: url(../img/moontrek-bg.png); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; }
+
+#funkdafied { background-image: url(../img/funkdafied-bg.png); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; }
 
 nav { color: #1b1717; box-shadow: 0.5px 0.5px 15px #1b1717; background-color: whitesmoke; }
 
