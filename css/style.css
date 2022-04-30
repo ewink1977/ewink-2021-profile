@@ -164,6 +164,7 @@ header {
 	background-position: center;
 	background-attachment: fixed;
 	min-height: 200px;
+	border-radius: 15px;
 }
 
 header h1 {
@@ -183,7 +184,6 @@ header h2 {
 }
 
 main {
-	padding: 1rem;
 	margin: 15px;
 }
 
@@ -192,4 +192,15 @@ main .profile-title {
 	font-size: 3rem;
 	font-weight: 800;
 	margin: 0;
+}
+
+main .profile-content {
+	padding: 10px 5px;
+}
+
+section .profile-picture {
+	max-width: 350px;
+	border-radius: 5px;
+	float: left;
+	margin: 15px 15px 15px 0;
 }
