@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800&family=Special+Elite&display=swap');
 
+/* Variables! */
+
 :root {
 	--main-font-style: 'Poppins', sans-serif;
 	--main-font-color: #1b1717;
@@ -9,8 +11,14 @@
 	--bowlby-one: 'Bowlby One SC', cursive;
 }
 
+/* Universal styles here! */
+
 * {
 	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +29,23 @@ body {
 	height: 100vh;
 	overflow: hidden;
 	margin: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 70rem;
+	width: 90%;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: var(--link-font-color);
+}
+
+a:hover,
+a:active {
+	color: var(--link-font-color-hover);
 }
 
 /* Landing Page Styles! */
@@ -85,3 +110,86 @@ body {
 }
 
 /* Content Styles - First Up, NAVBAR. */
+
+@media (max-width: 480px) {
+	.navbar {
+		display: none;
+	}
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px;
+	height: 70px;
+	min-width: 100%;
+	border-bottom: 2px solid var(--main-font-color);
+	box-shadow: 0 3px 15px gray;
+	border-radius: 0 0 25px 25px;
+}
+
+.navbar .nav-avatar {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	box-shadow: 1px 1px 10px;
+	cursor: pointer;
+}
+
+.navbar .nav-menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: end;
+	align-items: center;
+}
+
+.navbar .nav-menu .nav-menu-item {
+	margin: 0 15px;
+}
+
+.navbar .nav-menu .nav-menu-item i {
+	margin-right: 5px;
+	font-family: 'FontAwesome' !important;
+	font-style: normal !important;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url('../img/background.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 200px;
+}
+
+header h1 {
+	font-family: var(--special-elite);
+	font-size: 3.5rem;
+	color: aliceblue;
+	text-align: center;
+	margin: 0;
+}
+
+header h2 {
+	font-family: var(--special-elite);
+	font-size: 1.5rem;
+	color: aliceblue;
+	text-align: center;
+	margin: 0;
+}
+
+main {
+	padding: 1rem;
+	margin: 15px;
+}
+
+main .profile-title {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 800;
+	margin: 0;
+}
