@@ -220,6 +220,8 @@ section .profile-picture {
 	margin: 15px 15px 15px 0;
 }
 
+/* Cool little bootstrap like badges and pills! */
+
 .tech-list {
 	display: flex;
 	align-items: center;
@@ -270,4 +272,107 @@ section .profile-picture {
 
 .technologies .tech-list-body .tech-list-item {
 	background-color: cornflowerblue;
+}
+
+/* Project section... */
+
+section #projects {
+	margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.project-card {
+	width: 95%;
+	box-shadow: 3px 3px 10px #1b1717;
+	min-height: 1000px;
+	margin: 25px auto;
+	padding-bottom: 2rem;
+	border-radius: 15px;
+}
+
+.project-card .project-title {
+	font-family: var(--special-elite);
+	text-align: center;
+	padding: 25px 0;
+	margin: 0;
+}
+
+.project-card .project-info {
+	padding: 15px;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border: 1px solid rgba(27, 23, 23, 0.2);
+	border-radius: 5px;
+	box-shadow: 1px 1px 15px rgba(27, 23, 23, 0.2);
+}
+
+.project-card .project-info .project-info-header {
+	font-family: var(--bowlby-one);
+	text-align: center;
+	font-size: 2rem;
+	margin: 0;
+}
+
+.project-card .project-info .project-info-subheader {
+	font-family: var(--special-elite);
+	text-align: center;
+	font-size: 1rem;
+	margin: 0;
+}
+
+.project-card .project-info .project-technologies {
+	background-color: grey;
+	color: aliceblue;
+	border-radius: 25px;
+	margin: 1rem;
+	padding: 0 15px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.project-card .project-info .project-technologies img {
+	max-width: 200px;
+}
+.project-card .project-info .project-tech-list-body {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-card .project-info .project-tech-list-body ul li {
+	display: inline-block;
+	font-size: 0.7rem;
+	border-radius: 5px;
+	padding: 2px 6px;
+	font-weight: bold;
+	background-color: cornflowerblue;
+}
+
+.project-card .project-info .screenshot {
+	display: block;
+	margin: 0 auto;
+}
+
+#krk {
+	background: url('../img/employebbs.png');
+	background-position: center;
+	background-size: cover;
+}
+
+#moontrek {
+	background: url('../img/moontrek-bg.png');
+	background-position: center;
+	background-size: cover;
+}
+#crwn {
+	background: url('../img/crwn-bg.png');
+	background-position: center;
+	background-size: cover;
 }
