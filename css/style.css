@@ -9,6 +9,7 @@
 	--link-font-color-hover: #630000;
 	--special-elite: 'Special Elite', cursive;
 	--bowlby-one: 'Bowlby One SC', cursive;
+	--code-background: url('../img/background.jpg');
 }
 
 /* Universal styles here! */
@@ -27,12 +28,12 @@ body {
 	background-color: whitesmoke;
 	display: flex;
 	height: 100vh;
-	overflow: hidden;
 	margin: 0;
 }
 
 .container {
 	margin: 0 auto;
+	margin-bottom: 50px;
 	max-width: 70rem;
 	width: 90%;
 }
@@ -41,16 +42,30 @@ a:link,
 a:visited {
 	text-decoration: none;
 	color: var(--link-font-color);
+	transition: all 300ms ease-out;
 }
 
 a:hover,
 a:active {
-	color: var(--link-font-color-hover);
+	color: whitesmoke;
+	text-decoration: none;
+	text-shadow: var(--link-font-color-hover) 0 0 3px,
+		var(--link-font-color-hover) 0 0 3px,
+		var(--link-font-color-hover) 0 0 3px;
+	transition: all 300ms ease-in;
+}
+
+hr {
+	width: 85%;
+	height: 5px;
+	background-color: var(--main-font-color);
+	color: var(--main-font-color);
+	border-radius: 25%;
 }
 
 /* Landing Page Styles! */
 .landing {
-	background-image: url('../img/background.jpg');
+	background-image: var(--code-background);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -160,7 +175,7 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: url('../img/background.jpg');
+	background-image: var(--code-background);
 	background-position: center;
 	background-attachment: fixed;
 	min-height: 200px;
@@ -203,4 +218,56 @@ section .profile-picture {
 	border-radius: 5px;
 	float: left;
 	margin: 15px 15px 15px 0;
+}
+
+.tech-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--code-background);
+	background-position: center;
+	min-height: 400px;
+	margin: 1rem 0;
+}
+
+.technologies {
+	background-color: grey;
+	color: aliceblue;
+	min-height: 350px;
+	width: 47%;
+	border-radius: 25px;
+	margin: 1rem;
+	padding: 0 15px;
+}
+
+.technologies .tech-list-header ul,
+.technologies .tech-list-body ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.technologies .tech-list-header ul li,
+.technologies .tech-list-body ul li {
+	display: inline-block;
+	font-size: 0.7rem;
+	border-radius: 5px;
+	padding: 2px 4px;
+	font-weight: bold;
+}
+
+.technologies .tech-list-header .tech-list-header-green {
+	background-color: green;
+}
+
+.technologies .tech-list-header .tech-list-header-yellow {
+	color: var(--main-font-color);
+	background-color: yellow;
+}
+
+.technologies .tech-list-header .tech-list-header-blue {
+	background-color: blue;
+}
+
+.technologies .tech-list-body .tech-list-item {
+	background-color: cornflowerblue;
 }
