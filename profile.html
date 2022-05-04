@@ -220,14 +220,135 @@
                     </div>
                 </article>
                 <article class="project-card" id="moontrek">
-
+                    <h2 class="project-title">'Moon Trek' Fan Fiction Site</h2>
+                    <div class="project-info">
+                        <h3 class="project-info-header">
+                            THE STORY AND WIKI(ISH) SITE FOR THE MOON TREK FRANCHISE!
+                        </h3>
+                        <p>Moon Trek is my terrible set of Star Trek/anime crossover fan fiction novels. This Moon Trek
+                            website is an upgraded version of the static one that I currently had been using for years!
+                        </p>
+                        <p>The site has three main apps that it uses to dynamically provide content to the end user:
+                            Moon Trek Stories, Moon Trek LCARS, and Moon Trek Blog</p>
+                        <p><span class="bold-text">Moon Trek Stories</span> - This is the primary purpose of the site.
+                            While the old, static site simply acted as a link farm for users to download TXT and PDF
+                            files from my webserver, the stories pages do more now. First, all story data is saved in a
+                            PostgreSQL database and is generated on demand by Django. When you go to a story page, you
+                            will find the option to read a chapter in your browser, content of which is pulled from the
+                            database and served upon demand, or you can download full story PDF or TXT files from a
+                            DigitalOcean Space - their version of an S3 Bucket.</p>
+                        <p>The story page also contains links to relevant content from the other two apps.</p>
+                        <p><span class="bold-text">Moon Trek LCARS</span> - This app is the Wiki(ish) part of the site.
+                            LCARS is the Star Trek OS, so I borrowed it as the name of the app that holds data about the
+                            Moon Trek characters, places, ships, and dozens of other things no one will care about! Like
+                            with the stories, all data is held in the PostgreSQL database till requested, which is when
+                            Django builds the page for display to the user. Using the relational database many-to-many
+                            models, the app provides links to related stories on all LCARS data!</p>
+                        <p><span class="bold-text">Moon Trek Blog</span> - The least interesting part are blog posts
+                            about the stories. I used to host the system on a Wordpress site a long, long time ago, so I
+                            have some related blog posts that I will be adding. As well, authors notes and other
+                            diatribes that were included in the stories will be moved into blog posts as the application
+                            is built on.</p>
+                        <p>Right now, the application is still missing some 'content', but is functional and online
+                            right now!</p>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-info-header">
+                            <a href="https://moontrek.douglasavenue.com" target="_blank" rel="noopener noreferrer">LIVE
+                                SITE</a> | <a href="https://github.com/ewink1977/MoonTrek2021" target="_blank"
+                                rel="noopener noreferrer">GITHUB REPO</a>
+                        </h3>
+                        <h4 class="project-info-subheader">Technologies Used</h4>
+                        <div class="project-technologies">
+                            <img src="./img/newicons/python.png" alt="Python">
+                            <img src="./img/newicons/django.png" alt="Django">
+                            <img src="./img/newicons/javascript.png" alt="JavaScript">
+                            <img src="./img/newicons/html.png" alt="HTML5">
+                            <img src="./img/newicons/css.png" alt="CSS3">
+                            <img src="./img/newicons/ajax.png" alt="Ajax">
+                            <img src="./img/newicons/jquery.png" alt="jQuery">
+                            <img src="./img/newicons/postgresql.png" alt="PostgreSQL">
+                        </div>
+                        <h4 class="project-info-subheader">Libraries Used</h4>
+                        <div class="project-tech-list-body">
+                            <ul>
+                                <li class="tech-list-item">Bootstrap</li>
+                                <li class="tech-list-item">Font Awesome</li>
+                                <li class="tech-list-item">Pillow</li>
+                                <li class="tech-list-item">TinyMCE</li>
+                                <li class="tech-list-item">Jazzmin</li>
+                                <li class="tech-list-item">DotEnv</li>
+                                <li class="tech-list-item">Crispy Forms</li>
+                                <li class="tech-list-item">BOTO3 / Django-Storages</li>
+                            </ul>
+                        </div>
+                        <hr />
+                        <img src="./img/moontrek-screenshot.png" alt="Moon Trek Site Screenshot!" class="screenshot">
+                    </div>
                 </article>
                 <article class="project-card" id="crwn">
-
+                    <h2 class="project-title">CRWN Clothing Website</h2>
+                    <div class="project-info">
+                        <h3 class="project-info-header">
+                            PROOF-OF-PERFORMANCE ECOMMERCE WEB APPLICATION
+                        </h3>
+                        <p>In an attempt to further my knowledge and make myself more valuable to employers, I signed up
+                            to the Zero To Mastery Academy, a self-paced web and software development platform, and took
+                            the React Zero To Mastery course. This web application was the master project of the course.
+                        </p>
+                        <p>It is a small online clothing store with an integrated Stripe payment system that makes use
+                            of multiple React features, as well as external platforms like the aforementioned Stripe,
+                            Firebase's oauth login system, Firestore NoSQL database, and Redux, just to name a few.</p>
+                        <p>The site is fully functional and would only need a slight adjustment to the payment API to
+                            begin accepting real payments. There is a test credit card number listed on the checkout
+                            page you can use to test the payment API.</p>
+                        <p>The application is currently being hosted on Heroku's free tier Dyno, so the site might take
+                            a moment to load, but this is only a side effect of the 'sleep-mode' on the server and not
+                            the code itself. Once it loads for the first time and wakes up, you will find it far quicker
+                            and responsive.</p>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-info-header">
+                            <a href="https://crwn-edubya-live.herokuapp.com/" target="_blank"
+                                rel="noopener noreferrer">LIVE
+                                SITE</a> | <a href="https://github.com/ewink1977/CrwnClothingApp" target="_blank"
+                                rel="noopener noreferrer">GITHUB REPO</a>
+                        </h3>
+                        <h4 class="project-info-subheader">Technologies Used</h4>
+                        <div class="project-technologies">
+                            <img src="./img/newicons/react.png" alt="ReactJs">
+                            <img src="./img/newicons/javascript.png" alt="JavaScript">
+                            <img src="./img/newicons/html.png" alt="HTML5">
+                            <img src="./img/newicons/css.png" alt="CSS3">
+                            <img src="./img/newicons/firestore.png" alt="Firestore">
+                        </div>
+                        <h4 class="project-info-subheader">Libraries Used</h4>
+                        <div class="project-tech-list-body">
+                            <ul>
+                                <li class="tech-list-item">Google Fonts</li>
+                                <li class="tech-list-item">React Router DOM</li>
+                                <li class="tech-list-item">Redux</li>
+                                <li class="tech-list-item">Redux Persist</li>
+                                <li class="tech-list-item">Reselect</li>
+                                <li class="tech-list-item">Styled Components</li>
+                                <li class="tech-list-item">Node-SASS</li>
+                                <li class="tech-list-item">lodash.memoize</li>
+                            </ul>
+                        </div>
+                        <hr />
+                        <img src="./img/crwn-screenshot.jpg" alt="CRWN Clothing Site Screenshot!" class="screenshot">
+                    </div>
                 </article>
             </section>
         </main>
-
+        <footer>
+            <h4>©2022 ERIN WINKING & IMAGE ONE DIGITAL LLC</h4>
+            <p><a href="https://imageone.digital" target="_blank" rel="noopener noreferrer">IMAGEONE.DIGITAL</a> | <a
+                    href="https://funkdafied.moe" target="_blank" rel="noopener noreferrer">FUNKDAFIED.MOE</a> | <a
+                    href="https://funkdafied.douglasavenue.com" target="_blank" rel="noopener noreferrer">RANMA ½
+                    SITE</a> | <a href="https://moontrek.douglasavenue.com" target="_blank"
+                    rel="noopener noreferrer">MOONTREK</a></p>
+        </footer>
     </div>
 
 </body>
