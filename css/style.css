@@ -9,7 +9,7 @@
 	--link-font-color-hover: #630000;
 	--special-elite: 'Special Elite', cursive;
 	--bowlby-one: 'Bowlby One SC', cursive;
-	--code-background: url('../img/background.jpg');
+	--code-background: url('https://cdn.douglasavenue.com/da-all/background.jpg');
 }
 
 /* Universal styles here! */
@@ -35,6 +35,13 @@ body {
 	margin: 0 auto;
 	margin-bottom: 50px;
 	max-width: 70rem;
+	width: 90%;
+}
+
+.container404 {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	max-width: 100rem;
 	width: 90%;
 }
 
@@ -235,7 +242,8 @@ footer p {
 	margin: 0 15px;
 }
 
-.navbar .nav-menu .nav-menu-item i {
+.navbar .nav-menu .nav-menu-item i,
+.mobnav .moblink i {
 	margin-right: 5px;
 	font-family: 'FontAwesome' !important;
 	font-style: normal !important;
@@ -257,12 +265,6 @@ footer p {
 	width: 100%;
 	border: 1px solid #1b1717;
 	font-size: 1.25rem;
-}
-
-.mobnav .moblink i {
-	margin-right: 5px;
-	font-family: 'FontAwesome' !important;
-	font-style: normal !important;
 }
 
 @media screen and (min-width: 700px) {
@@ -464,21 +466,22 @@ section #projects {
 	margin: 0 auto;
 }
 
-#krk {
-	background: url('../img/employebbs.png');
+#krk,
+#moontrek,
+#crwn {
 	background-position: center;
 	background-size: cover;
 }
 
+#krk {
+	background: url('https://cdn.douglasavenue.com/da-all/employebbs.png');
+}
+
 #moontrek {
-	background: url('../img/moontrek-bg.png');
-	background-position: center;
-	background-size: cover;
+	background: url('https://cdn.douglasavenue.com/da-all/moontrek-bg.png');
 }
 #crwn {
-	background: url('../img/crwn-bg.png');
-	background-position: center;
-	background-size: cover;
+	background: url('https://cdn.douglasavenue.com/da-all/crwn-bg.png');
 }
 
 /* Resume section */
@@ -516,7 +519,6 @@ section #projects {
 	border: 1px solid black;
 	border-radius: 15px;
 	box-shadow: 1px 1px 20px gray;
-	/* min-height: 500px; */
 	width: 100%;
 	margin: 10px auto;
 }
@@ -568,17 +570,73 @@ section #projects {
 	}
 
 	#fox13 {
-		background-image: url(../img/q13logo.png);
+		background-image: url('https://cdn.douglasavenue.com/da-all/q13logo.png');
 	}
 
 	#kjrh {
-		background-image: url(../img/kjrhlogo.png);
+		background-image: url('https://cdn.douglasavenue.com/da-all/kjrhlogo.png');
 	}
 
 	#ktul {
-		background-image: url(../img/ktullogo.png);
+		background-image: url('https://cdn.douglasavenue.com/da-all/ktullogo.png');
 	}
 	#koki {
-		background-image: url(../img/fox23logo.png);
+		background-image: url('https://cdn.douglasavenue.com/da-all/fox23logo.png');
+	}
+}
+
+/* 404 Page restyling... */
+
+.body404 {
+	background-image: var(--code-background);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: aliceblue;
+}
+
+.hero404 {
+	font-size: 5rem;
+	font-family: var(--special-elite);
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.row404 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+@media screen and (min-width: 800px) {
+	.row404 {
+		flex-direction: row;
+	}
+
+	.row404 .col404 {
+		padding: 1rem;
+		width: 50%;
+	}
+
+	.image404 {
+		width: 100%;
+		object-fit: contain;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.row404 {
+		flex-direction: column;
+	}
+
+	.row404 .col404 {
+		padding: 1rem;
+		width: 100%;
+	}
+
+	.image404 {
+		height: 350px;
+		object-fit: contain;
 	}
 }
