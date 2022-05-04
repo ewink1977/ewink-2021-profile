@@ -1,14 +1,6 @@
 <h1>ewink's NEW profile!</h1>
 <img src="https://cdn.douglasavenue.com/da-all/yuu.png" alt="Yuu!">
 <h2>a NEW profile for a NEW ewink!</h2>
-<p>My current profile is designed to get me a job in video or in journalism. Now, I am a web developer,
-and as such, I need a profile that reflects that!</p>
-<p>This profile will more fall in line with what is expected of me as a developer. While it will be 
-pretty much simple CSS/HTML, it will link to my projects and various other things that will hopefully
-convince companies with lots and lots of money to hire me!</p>
-<p>My current profile is at <a href="https://douglasavenue.com/" style="text-decoration: none;">douglasavenue.com</a>. 
-It will be replaced by this one. Some of those files are in the inital Git Push, but will be deleted when they are no
-longer needed.</p>
-<h2>UPDATE!</h2>
-<p>I have decided to start from scratch and make a Bootstrap centered profile, since the use of Bootstrap will be 
-important for me as a fullstack developer!</p>
+<p>Well, the old <a href="https://douglasavenue.com/" style="text-decoration: none;">douglasavenue.com</a> is no more!</p> 
+<p>I decided to say goodbye to Bootstrap and code the styles all by myself (as I am a big boy now).</p>
+<p>Once I am happy with everything, this branch will kick the old one to the curb, and all will be right with the world.</p>
