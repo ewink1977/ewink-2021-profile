@@ -1,265 +1,642 @@
-header {
-  background-image: url("../img/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  box-shadow: 0.5px 0.5px 15px #1b1717;
-  overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800&family=Special+Elite&display=swap');
+
+/* Variables! */
+
+:root {
+	--main-font-style: 'Poppins', sans-serif;
+	--main-font-color: #1b1717;
+	--link-font-color: #810000;
+	--link-font-color-hover: #630000;
+	--special-elite: 'Special Elite', cursive;
+	--bowlby-one: 'Bowlby One SC', cursive;
+	--code-background: url('https://cdn.douglasavenue.com/da-all/background.jpg');
 }
 
-header h1 {
-  text-align: center;
-  color: #eeebdd;
-  font-family: Special Elite, cursive;
-  font-size: 6em;
-  padding-top: 4rem;
+/* Universal styles here! */
+
+* {
+	box-sizing: border-box;
 }
 
-header h2 {
-  text-align: center;
-  color: #eeebdd;
-  font-family: Special Elite, cursive;
-  font-size: 3em;
-  padding-bottom: 1.5em;
-  margin: -25px auto 0px auto;
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--main-font-style);
+	color: var(--main-font-color);
+	background-color: whitesmoke;
+	display: flex;
+	height: 100vh;
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	max-width: 70rem;
+	width: 90%;
+}
+
+.container404 {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	max-width: 100rem;
+	width: 90%;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: var(--link-font-color);
+	transition: all 300ms ease-out;
+}
+
+a:hover,
+a:active {
+	color: whitesmoke;
+	text-decoration: none;
+	text-shadow: var(--link-font-color-hover) 0 0 3px,
+		var(--link-font-color-hover) 0 0 3px,
+		var(--link-font-color-hover) 0 0 3px;
+	transition: all 300ms ease-in;
+}
+
+hr {
+	width: 85%;
+	height: 5px;
+	background-color: var(--main-font-color);
+	color: var(--main-font-color);
+	border-radius: 25%;
+}
+
+.bold-text {
+	font-weight: 800;
 }
 
 footer {
-  background-image: url("../img/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow: hidden;
-  margin: 0;
-  text-transform: uppercase;
-  box-shadow: 0.5px 0.5px 15px #1b1717;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	color: aliceblue;
+	background: var(--code-background);
 }
 
-footer a {
-  color: #810000;
-  text-decoration: none;
+footer h4 {
+	margin: 0;
 }
 
-footer a:hover {
-  color: #630000;
-  text-decoration: dotted;
+footer p {
+	margin-top: 0;
 }
 
-#ebbs {
-  background-image: url(../img/employebbs.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+/* Landing Page Styles! */
+.landing {
+	background-image: var(--code-background);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
 }
 
-#myweek {
-  background-image: url(../img/myweek.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+.landing h1 {
+	font-family: var(--special-elite);
+	font-size: 5rem;
+	color: aliceblue;
+	text-align: center;
+	margin: 0;
 }
 
-#moonTrek {
-  background-image: url(../img/moontrek-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+.landing h2 {
+	font-family: var(--special-elite);
+	font-size: 2rem;
+	color: aliceblue;
+	text-align: center;
+	margin: 0;
 }
 
-#funkdafied {
-  background-image: url(../img/funkdafied-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+.landing .button-row {
+	width: 50vw;
+	margin: 1rem 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#crwn-clothing {
-  background-image: url(../img/crwn-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+.landing .button-row .btn {
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+	margin: 0 2rem;
+	outline: none;
+	border: none;
+	background-color: aliceblue;
+	font-family: var(--special-elite);
+	font-weight: 600;
+	cursor: pointer;
 }
 
-nav {
-  color: #1b1717;
-  box-shadow: 0.5px 0.5px 15px #1b1717;
-  background-color: whitesmoke;
+.landing .button-row .btn:hover {
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid lightblue;
+	background-color: white;
 }
 
-nav a {
-  color: #810000 !important;
+.landing .button-row .btn:active {
+	width: 140px;
+	height: 40px;
+	transition: all 50ms ease;
 }
 
-nav a:hover {
-  color: #630000 !important;
+/* Content Styles - First Up, NAVBAR. */
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	min-height: 70px;
+	min-width: 100%;
+	box-shadow: 0 3px 15px gray;
+	overflow: hidden;
 }
 
-nav img.icon {
-  width: 3vh;
+@media screen and (max-width: 700px) {
+	.navbar {
+		display: none;
+	}
 }
+
+/* Thanks, W3 Schools for teaching me this dropdown menu! */
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: var(--link-font-color);
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown .dropbtn i {
+	margin-left: 5px;
+	font-family: 'FontAwesome' !important;
+	font-style: normal !important;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	float: none;
+	color: var(--link-font-color);
+	padding: 12px 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	color: aliceblue;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.navbar .nav-avatar {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	box-shadow: 1px 1px 10px;
+	cursor: pointer;
+}
+
+.navbar .nav-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: end;
+	align-items: center;
+}
+
+.navbar .nav-menu .nav-menu-item {
+	margin: 0 15px;
+}
+
+.navbar .nav-menu .nav-menu-item i,
+.mobnav .moblink i {
+	margin-right: 5px;
+	font-family: 'FontAwesome' !important;
+	font-style: normal !important;
+}
+
+/* Mobile Navigation Here... */
+
+.mobnav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.mobnav .moblink {
+	background-color: aliceblue;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #1b1717;
+	font-size: 1.25rem;
+}
+
+@media screen and (min-width: 700px) {
+	.mobnav {
+		display: none;
+	}
+}
+
+/* End Of Navigation! */
 
 header {
-  margin-left: -15px;
-  margin-right: -15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: var(--code-background);
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 200px;
+	border-radius: 0 0 15px 15px;
 }
 
-.resume-section-head {
-  padding: 0.6em;
-  border-radius: 15px;
-  background-image: linear-gradient(to right, #630000, whitesmoke);
-  font-family: Bowlby One SC, cursive;
-  color: aliceblue;
-  text-shadow: 1px 1px 1px lightslategray;
-  box-shadow: 0.5px 0.5px 15px #1b1717;
+header h1 {
+	font-family: var(--special-elite);
+	font-size: 3.5rem;
+	color: aliceblue;
+	text-align: center;
+	margin: 0;
 }
 
-.resume-icons {
-  color: #810000;
+header h2 {
+	font-family: var(--special-elite);
+	font-size: 1.5rem;
+	color: aliceblue;
+	text-align: center;
+	margin: 0;
 }
 
-#summary,
-#skills,
-#exp,
-#contact {
-  margin-bottom: 0.5em;
+main {
+	margin: 15px;
 }
 
-.job {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px;
+main .profile-title {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 800;
+	margin: 0;
 }
 
-.q13 {
-  background-image: url(../img/q13logo.png);
+main .profile-content {
+	padding: 10px 5px;
 }
 
-.kjrh {
-  background-image: url(../img/kjrhlogo.png);
+section .profile-picture {
+	max-width: 350px;
+	border-radius: 5px;
+	float: left;
+	margin: 15px 15px 15px 0;
 }
 
-.ktul {
-  background-image: url(../img/ktullogo.png);
+/* Cool little bootstrap like badges and pills! */
+
+.tech-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--code-background);
+	background-position: center;
+	min-height: 400px;
+	margin: 1rem 0;
 }
 
-.fox23 {
-  background-image: url(../img/fox23logo.png);
+.technologies {
+	background-color: grey;
+	color: aliceblue;
+	min-height: 350px;
+	width: 47%;
+	border-radius: 25px;
+	margin: 1rem;
+	padding: 0 15px;
 }
 
-html,
-body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  color: #1b1717;
-  background-color: whitesmoke;
+.technologies .tech-list-header ul,
+.technologies .tech-list-body ul {
+	list-style: none;
+	padding-left: 0;
 }
 
-section {
-  background-color: whitesmoke;
-  margin-bottom: 3rem;
+.technologies .tech-list-header ul li,
+.technologies .tech-list-body ul li {
+	display: inline-block;
+	font-size: 0.7rem;
+	border-radius: 5px;
+	padding: 2px 4px;
+	font-weight: bold;
 }
 
-section a {
-  color: #810000 !important;
-  font-weight: bold;
-  text-decoration: none;
+.technologies .tech-list-header .tech-list-header-green {
+	background-color: green;
 }
 
-section a:hover {
-  color: #630000 !important;
-  font-weight: bold;
-  text-decoration: underline;
+.technologies .tech-list-header .tech-list-header-yellow {
+	color: var(--main-font-color);
+	background-color: yellow;
 }
 
-section a:visited {
-  color: #810000 !important;
-  font-weight: bold;
-  text-decoration: none;
+.technologies .tech-list-header .tech-list-header-blue {
+	background-color: blue;
 }
 
-section .underline {
-  text-decoration: underline;
+.technologies .tech-list-body .tech-list-item {
+	background-color: cornflowerblue;
 }
 
-section h5 {
-  font-family: Special Elite, cursive;
+/* Project section... */
+
+section #projects {
+	margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.profpic {
-  max-width: 500px;
+.project-card {
+	width: 95%;
+	box-shadow: 3px 3px 10px #1b1717;
+	min-height: 1000px;
+	margin: 25px auto;
+	padding-bottom: 2rem;
+	border-radius: 15px;
 }
 
-#cards {
-  background-image: url("../img/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 3em;
-  box-shadow: 0.5px 0.5px 15px #1b1717;
-  overflow: hidden;
+.project-card .project-title {
+	font-family: var(--special-elite);
+	text-align: center;
+	padding: 25px 0;
+	margin: 0;
 }
 
-#cards .card {
-  max-width: 33rem;
+.project-card .project-info {
+	padding: 15px;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border: 1px solid rgba(27, 23, 23, 0.2);
+	border-radius: 5px;
+	box-shadow: 1px 1px 15px rgba(27, 23, 23, 0.2);
 }
 
-h2.project {
-  font-family: Special Elite, cursive;
-  color: #1b1717;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px lightslategray;
-  margin-left: 1rem;
+.project-card .project-info .project-info-header {
+	font-family: var(--bowlby-one);
+	text-align: center;
+	font-size: 2rem;
+	margin: 0;
 }
 
-h4.project-subtitle {
-  font-family: Bowlby One SC, cursive;
-  color: #1b1717;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 1px lightslategray;
+.project-card .project-info .project-info-subheader {
+	font-family: var(--special-elite);
+	text-align: center;
+	font-size: 1rem;
+	margin: 0;
 }
 
-img.newicon {
-  max-width: 150px;
+.project-card .project-info .project-technologies {
+	background-color: grey;
+	color: aliceblue;
+	border-radius: 25px;
+	margin: 1rem;
+	padding: 0 15px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
-.code-bg {
-  background-image: url("../img/background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-size: cover;
-  margin: 0;
-  color: whitesmoke;
+.project-card .project-info .project-technologies img {
+	max-width: 200px;
+}
+.project-card .project-info .project-tech-list-body {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-h1.hero {
-  font-size: 5em;
-  font-family: 'Special Elite', cursive;
-  /* Like this one! */
-  color: white;
-  text-align: center;
-  margin-top: 0.5em;
+.project-card .project-info .project-tech-list-body ul li {
+	display: inline-block;
+	font-size: 0.7rem;
+	border-radius: 5px;
+	padding: 2px 6px;
+	font-weight: bold;
+	background-color: cornflowerblue;
+	color: aliceblue;
 }
 
-h2.hero {
-  margin-top: -26px;
-  font-size: 2.2em;
-  font-family: 'Special Elite', cursive;
-  color: white;
-  text-align: center;
+.project-card .project-info .screenshot {
+	display: block;
+	margin: 0 auto;
 }
 
-.fourohfour {
-  font-family: 'Bowlby One SC', cursive;
+#krk,
+#moontrek,
+#crwn {
+	background-position: center;
+	background-size: cover;
 }
-/*# sourceMappingURL=style.css.map */
+
+#krk {
+	background: url('https://cdn.douglasavenue.com/da-all/employebbs.png');
+}
+
+#moontrek {
+	background: url('https://cdn.douglasavenue.com/da-all/moontrek-bg.png');
+}
+#crwn {
+	background: url('https://cdn.douglasavenue.com/da-all/crwn-bg.png');
+}
+
+/* Resume section */
+
+.section-head {
+	margin-top: 10px;
+	padding-top: 5px;
+	font-family: var(--bowlby-one);
+	color: aliceblue;
+	background-image: linear-gradient(
+		to right,
+		var(--link-font-color),
+		aliceblue
+	);
+}
+
+.section-head h2 {
+	font-size: 2rem;
+	padding: 10px 15px;
+	margin: 0;
+	letter-spacing: 3px;
+}
+
+.section-content {
+	padding: 10px;
+	margin-left: 1rem;
+}
+
+.section-content i {
+	color: var(--link-font-color);
+	margin: 0 15px;
+}
+
+.job-card {
+	border: 1px solid black;
+	border-radius: 15px;
+	box-shadow: 1px 1px 20px gray;
+	width: 100%;
+	margin: 10px auto;
+}
+
+.job-content {
+	padding: 10px;
+	margin: 0.5rem 1rem;
+}
+
+.job-card .job-card-head {
+	margin: 15px;
+	padding-left: 30px;
+	font-size: 2rem;
+}
+
+.job-card .job-card-subhead {
+	padding-left: 45px;
+	margin-top: -20px;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.job-card .job-card-subhead-date {
+	font-weight: 400;
+}
+
+.job-card ul {
+	list-style: disc;
+	width: 70%;
+}
+
+/* The background doesn't look great on small screens, so let's get rid of it and make the list 100%! */
+
+@media screen and (max-width: 800px) {
+	.job-card ul {
+		width: 100%;
+		padding-right: 25px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	#fox13,
+	#kjrh,
+	#ktul,
+	#koki {
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	#fox13 {
+		background-image: url('https://cdn.douglasavenue.com/da-all/q13logo.png');
+	}
+
+	#kjrh {
+		background-image: url('https://cdn.douglasavenue.com/da-all/kjrhlogo.png');
+	}
+
+	#ktul {
+		background-image: url('https://cdn.douglasavenue.com/da-all/ktullogo.png');
+	}
+	#koki {
+		background-image: url('https://cdn.douglasavenue.com/da-all/fox23logo.png');
+	}
+}
+
+/* 404 Page restyling... */
+
+.body404 {
+	background-image: var(--code-background);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: aliceblue;
+}
+
+.hero404 {
+	font-size: 5rem;
+	font-family: var(--special-elite);
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.row404 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+@media screen and (min-width: 800px) {
+	.row404 {
+		flex-direction: row;
+	}
+
+	.row404 .col404 {
+		padding: 1rem;
+		width: 50%;
+	}
+
+	.image404 {
+		width: 100%;
+		object-fit: contain;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.row404 {
+		flex-direction: column;
+	}
+
+	.row404 .col404 {
+		padding: 1rem;
+		width: 100%;
+	}
+
+	.image404 {
+		height: 350px;
+		object-fit: contain;
+	}
+}
